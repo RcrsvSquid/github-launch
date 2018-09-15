@@ -49,8 +49,11 @@ func parseArgs() (remoteName string) {
 	case !(len(os.Args) > 1):
 		remoteName = "origin"
 	case os.Args[1] == "-h" || os.Args[1] == "--help":
-		fmt.Println("usage: gh-launch [remoteName:{origin}]")
 		fmt.Println("Launches github homepage from a git directory")
+		fmt.Println("\nUsage:")
+		fmt.Println("  gh-launch [remoteName:{origin}] [options]")
+		fmt.Println("\nOptions:")
+		fmt.Println("  -h, --help     Show this help text")
 		os.Exit(0)
 	default:
 		remoteName = os.Args[1]
