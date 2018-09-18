@@ -7,7 +7,7 @@ Handles ssh remote urls as well. For example the remote "git@github.com:Rcrsvsqu
 
 ## Installation
 ```bash
-$ go get github.com/RcrsvSquid/github-launch.git
+$ go get github.com/RcrsvSquid/github-launch
 $ cd $GOPATH/src/github.com/RcrsvSquid/github-launch
 $ go install gh-launch.go
 ```
